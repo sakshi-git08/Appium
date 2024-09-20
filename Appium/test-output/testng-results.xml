@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-20T16:14:05Z" name="Default suite" finished-at="2024-09-20T16:14:22Z" duration-ms="17101">
+  <suite started-at="2024-09-20T17:17:04Z" name="Default suite" finished-at="2024-09-20T17:17:57Z" duration-ms="52999">
     <groups>
     </groups>
-    <test started-at="2024-09-20T16:14:05Z" name="Default test" finished-at="2024-09-20T16:14:22Z" duration-ms="17101">
+    <test started-at="2024-09-20T17:17:04Z" name="Default test" finished-at="2024-09-20T17:17:57Z" duration-ms="52999">
       <class name="MobileTesting.Appium.AppiumBasics">
-        <test-method signature="AppiumTest()[pri:0, instance:MobileTesting.Appium.AppiumBasics@6bc407fd]" started-at="2024-09-20T16:14:05Z" name="AppiumTest" finished-at="2024-09-20T16:14:22Z" duration-ms="17077" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:MobileTesting.Appium.AppiumBasics@1984b1f]" started-at="2024-09-20T17:17:04Z" name="configureAppium" finished-at="2024-09-20T17:17:42Z" duration-ms="37146" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppiumTest -->
+        </test-method> <!-- configureAppium -->
+        <test-method signature="wifiSettingsName()[pri:0, instance:MobileTesting.Appium.AppiumBasics@1984b1f]" started-at="2024-09-20T17:17:42Z" name="wifiSettingsName" finished-at="2024-09-20T17:17:55Z" duration-ms="13071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wifiSettingsName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MobileTesting.Appium.AppiumBasics@1984b1f]" started-at="2024-09-20T17:17:55Z" name="tearDown" finished-at="2024-09-20T17:17:57Z" duration-ms="2731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- MobileTesting.Appium.AppiumBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
