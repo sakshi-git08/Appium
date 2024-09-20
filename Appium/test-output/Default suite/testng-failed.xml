@@ -5,7 +5,9 @@
     <classes>
       <class name="MobileTesting.Appium.AppiumBasics">
         <methods>
-          <include name="AppiumTest"/>
+          <include name="tearDown"/>
+          <include name="wifiSettingsName"/>
+          <include name="configureAppium"/>
         </methods>
       </class> <!-- MobileTesting.Appium.AppiumBasics -->
     </classes>

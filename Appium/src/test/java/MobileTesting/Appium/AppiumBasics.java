@@ -23,6 +23,8 @@ public class AppiumBasics extends BaseTest {
 		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
 		driver.findElement(By.id("android:id/checkbox")).click();
 		driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+		driver.findElement(By.id("android:id/edit")).sendKeys("Sakshi_Wifi");
+		driver.findElements(AppiumBy.className("(android.widget.Button)")).get(1).click();
 
 	}
 
