@@ -1,6 +1,7 @@
 package MobileTesting.Appium;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -23,6 +24,10 @@ public class AppiumBasics extends BaseTest {
 		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
 		driver.findElement(By.id("android:id/checkbox")).click();
 		driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+		// checking whether wifi settings popup is opened or not before entering wifi
+		// name
+		String alertTitle = driver.findElement(By.id("android:id/alertTitle")).getText();
+		Assert.assertEquals(alertTitle, "WiFi settings");
 		driver.findElement(By.id("android:id/edit")).sendKeys("Sakshi_Wifi");
 		driver.findElements(AppiumBy.className("(android.widget.Button)")).get(1).click();
 
