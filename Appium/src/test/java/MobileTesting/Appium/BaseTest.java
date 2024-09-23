@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
@@ -67,6 +68,11 @@ public class BaseTest {
 	public void swipeAction(WebElement ele, String direction) {
 		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of("elementId",
 				((RemoteWebElement) ele).getId(), "direction", direction, "percent", 0.25));
+	}
+
+	public void dragAndDropAction(WebElement ele, int cordX, int cordY) {
+		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
+				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", cordX, "endY", cordY));
 	}
 
 	@AfterClass
