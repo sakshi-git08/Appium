@@ -64,6 +64,11 @@ public class BaseTest {
 		// once it is false you can't scroll more.
 	}
 
+	public void swipeAction(WebElement ele, String direction) {
+		((JavascriptExecutor) driver).executeScript("mobile: swipeGesture", ImmutableMap.of("elementId",
+				((RemoteWebElement) ele).getId(), "direction", direction, "percent", 0.25));
+	}
+
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
