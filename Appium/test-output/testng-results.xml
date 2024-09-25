@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T03:12:38Z" name="Default suite" finished-at="2024-09-23T03:13:10Z" duration-ms="31644">
+  <suite started-at="2024-09-25T16:01:41Z" name="Default suite" finished-at="2024-09-25T16:02:57Z" duration-ms="75645">
     <groups>
     </groups>
-    <test started-at="2024-09-23T03:12:38Z" name="Default test" finished-at="2024-09-23T03:13:10Z" duration-ms="31644">
-      <class name="MobileTesting.Appium.DragAndDropDemo">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:MobileTesting.Appium.DragAndDropDemo@38b27cdc]" started-at="2024-09-23T03:12:38Z" name="configureAppium" finished-at="2024-09-23T03:12:59Z" duration-ms="21006" status="PASS">
+    <test started-at="2024-09-25T16:01:41Z" name="Default test" finished-at="2024-09-25T16:02:57Z" duration-ms="75645">
+      <class name="MobileTesting.Appium.ECommerce_TC_1">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_1@38b27cdc]" started-at="2024-09-25T16:01:41Z" name="configureAppium" finished-at="2024-09-25T16:02:04Z" duration-ms="23149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="swipeDemoTest()[pri:0, instance:MobileTesting.Appium.DragAndDropDemo@38b27cdc]" started-at="2024-09-23T03:12:59Z" name="swipeDemoTest" finished-at="2024-09-23T03:13:09Z" duration-ms="9543" status="PASS">
+        <test-method signature="fillForm()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_1@38b27cdc]" started-at="2024-09-25T16:02:04Z" name="fillForm" finished-at="2024-09-25T16:02:55Z" duration-ms="51163" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swipeDemoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MobileTesting.Appium.DragAndDropDemo@38b27cdc]" started-at="2024-09-23T03:13:09Z" name="tearDown" finished-at="2024-09-23T03:13:10Z" duration-ms="1057" status="PASS">
+        </test-method> <!-- fillForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_1@38b27cdc]" started-at="2024-09-25T16:02:55Z" name="tearDown" finished-at="2024-09-25T16:02:57Z" duration-ms="1296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- MobileTesting.Appium.DragAndDropDemo -->
+      </class> <!-- MobileTesting.Appium.ECommerce_TC_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

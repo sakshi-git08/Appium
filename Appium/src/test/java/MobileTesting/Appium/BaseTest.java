@@ -45,9 +45,10 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Sakshiemulator");
-		options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\ApiDemos-debug.apk");
+		//options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\ApiDemos-debug.apk");
+		options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\General-Store.apk");
 
-		driver = new AndroidDriver(new URL(" http://127.0.0.1:4723"), options);
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
