@@ -15,7 +15,7 @@ import io.appium.java_client.AppiumBy;
 public class ECommerce_TC_3 extends BaseTest {
 
 	@Test
-	public void verifyPurchasAmount() throws InterruptedException {
+	public void verifyPurchaseAmount() throws InterruptedException {
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Sakshi Aggarwal");
 		driver.hideKeyboard(); // to hide keyboard since you added text in the field so keyboard would have
 								// been open.
@@ -36,10 +36,10 @@ public class ECommerce_TC_3 extends BaseTest {
 
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.textToBePresentInElementValue(
-				driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title")), "Cart"));
-//		wait.until(ExpectedConditions.attributeContains(By.id("com.androidsample.generalstore:id/toolbar_title"),
-//				"text", "Cart"));
+//		wait.until(ExpectedConditions.attributeContains(
+//				driver.findElement(By.xpath("//android.widget.TextView[@text='Cart']")));
+		wait.until(ExpectedConditions.attributeContains(By.id("com.androidsample.generalstore:id/toolbar_title"),
+				"text", "Cart"));
 		List<WebElement> productPrices = driver.findElements(By.id("com.androidsample.generalstore:id/productPrice"));
 		int count = productPrices.size();
 		double totalSum = 0;
