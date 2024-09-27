@@ -45,6 +45,7 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Sakshiemulator");
+		options.setChromedriverExecutable("C:\\Users\\DELL\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		// options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\ApiDemos-debug.apk");
 		options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\General-Store.apk");
 

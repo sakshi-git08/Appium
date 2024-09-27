@@ -2,8 +2,10 @@ package MobileTesting.Appium;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,11 +13,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
-public class ECommerce_TC_3 extends BaseTest {
-
+public class ECommerce_TC_4 extends BaseTest {
 	@Test
-	public void verifyPurchaseAmount() throws InterruptedException {
+	public void hybridAppTest() throws InterruptedException {
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Sakshi Aggarwal");
 		driver.hideKeyboard(); // to hide keyboard since you added text in the field so keyboard would have
 								// been open.
@@ -63,8 +66,23 @@ public class ECommerce_TC_3 extends BaseTest {
 		driver.findElement(AppiumBy.className("android.widget.CheckBox")).click();
 		// click on visit to website button
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+		Thread.sleep(20000);
+		// Hybrid - Google page -> Here, we are trying to switch the context from
+		// AndroidDriver to the one which
+		// can work in web view also.
+		Set<String> contexts = driver.getContextHandles(); // Get the names of available contexts.
+		for (String contextName : contexts) {
+			System.out.println(contextName);
+		}
+		/*
+		 * NATIVE_APP WEBVIEW_com.androidsample.generalstore
+		 */
+		driver.context("WEBVIEW_com.androidsample.generalstore"); // chromedriver
+		driver.findElement(By.name("q")).sendKeys("BK Shivani");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
-		//Hybrid - Google page -> 
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.context("NATIVE_APP");
 	}
-
+//124.0.6367
 }
