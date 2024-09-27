@@ -45,11 +45,14 @@ public class BaseTest {
 
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Sakshiemulator");
-		//options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\ApiDemos-debug.apk");
+		// options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\ApiDemos-debug.apk");
 		options.setApp("D:\\Sakshi\\MobileTestingApks\\resources\\General-Store.apk");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		if (driver == null) {
+			throw new RuntimeException("Failed to initialize the Appium driver");
+		}
 	}
 
 	public void longPressAction(WebElement ele) {
@@ -74,6 +77,11 @@ public class BaseTest {
 	public void dragAndDropAction(WebElement ele, int cordX, int cordY) {
 		((JavascriptExecutor) driver).executeScript("mobile: dragGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "endX", cordX, "endY", cordY));
+	}
+
+	public Double getFormattedString(String amount) {
+		Double price = Double.parseDouble(amount.substring(1));
+		return price;
 	}
 
 	@AfterClass
