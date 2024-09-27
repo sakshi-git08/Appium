@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T03:50:45Z" name="Default suite" finished-at="2024-09-27T03:51:16Z" duration-ms="31787">
+  <suite started-at="2024-09-27T04:06:11Z" name="Default suite" finished-at="2024-09-27T04:06:57Z" duration-ms="46673">
     <groups>
     </groups>
-    <test started-at="2024-09-27T03:50:45Z" name="Default test" finished-at="2024-09-27T03:51:16Z" duration-ms="31787">
+    <test started-at="2024-09-27T04:06:11Z" name="Default test" finished-at="2024-09-27T04:06:57Z" duration-ms="46673">
       <class name="MobileTesting.Appium.ECommerce_TC_3">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T03:50:45Z" name="configureAppium" finished-at="2024-09-27T03:50:55Z" duration-ms="10879" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T04:06:11Z" name="configureAppium" finished-at="2024-09-27T04:06:27Z" duration-ms="16763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="verifyPurchaseAmount()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T03:50:55Z" name="verifyPurchaseAmount" finished-at="2024-09-27T03:51:15Z" duration-ms="19960" status="PASS">
+        <test-method signature="verifyPurchaseAmount()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T04:06:27Z" name="verifyPurchaseAmount" finished-at="2024-09-27T04:06:56Z" duration-ms="29015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPurchaseAmount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T03:51:15Z" name="tearDown" finished-at="2024-09-27T03:51:16Z" duration-ms="913" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MobileTesting.Appium.ECommerce_TC_3@49c66ade]" started-at="2024-09-27T04:06:56Z" name="tearDown" finished-at="2024-09-27T04:06:57Z" duration-ms="844" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

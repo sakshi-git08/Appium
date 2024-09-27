@@ -35,6 +35,7 @@ public class ECommerce_TC_3 extends BaseTest {
 		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
 
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 //		wait.until(ExpectedConditions.attributeContains(
 //				driver.findElement(By.xpath("//android.widget.TextView[@text='Cart']")));
@@ -53,6 +54,16 @@ public class ECommerce_TC_3 extends BaseTest {
 				.getText();
 		Double displayFormattedSum = getFormattedString(totalPurchaseAmount);
 		Assert.assertEquals(totalSum, displayFormattedSum);
+		// long press on terms and conditions
+		WebElement ele = driver.findElement(By.id("com.androidsample.generalstore:id/termsButton"));
+		longPressAction(ele);
+		// close popup
+		driver.findElement(By.id("android:id/button1")).click();
+		// tick checkbox
+		driver.findElement(AppiumBy.className("android.widget.CheckBox")).click();
+		// click on visit to website button
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+		Thread.sleep(2000);
 	}
 
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="MobileTesting.Appium.ECommerce_TC_3">
         <methods>
-          <include name="verifyPurchasAmount"/>
           <include name="tearDown"/>
+          <include name="verifyPurchaseAmount"/>
           <include name="configureAppium"/>
         </methods>
       </class> <!-- MobileTesting.Appium.ECommerce_TC_3 -->
