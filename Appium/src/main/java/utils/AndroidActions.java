@@ -19,6 +19,7 @@ public class AndroidActions {
 
 	}
 
+	//Action Methods
 	public void longPressAction(WebElement ele) {
 		((JavascriptExecutor) driver).executeScript("mobile: longClickGesture",
 				ImmutableMap.of("elementId", ((RemoteWebElement) ele).getId(), "duration", 2000));

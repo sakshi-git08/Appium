@@ -41,6 +41,7 @@ public class FormPage extends AndroidActions {
 	private WebElement shopButton;
 	// driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 
+	//Action Methods
 	public void setNameField(String name) {
 		nameField.sendKeys(name);
 		driver.hideKeyboard();
@@ -59,8 +60,9 @@ public class FormPage extends AndroidActions {
 		driver.findElement(By.xpath("//android.widget.TextView[@text='" + countryName + "']")).click();
 	}
 
-	public void submitForm() {
+	public ProductCatalogue submitForm() {
 		shopButton.click();
+		return new ProductCatalogue(driver);
 	}
 
 }

@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import framework.pageObjects.android.CartPage;
 import framework.pageObjects.android.FormPage;
 import framework.pageObjects.android.ProductCatalogue;
 import io.appium.java_client.AppiumBy;
@@ -21,16 +22,15 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 public class EndToEndGeneralStoreTest extends TestBase {
 	@Test
 	public void hybridAppTest() throws InterruptedException {
-		FormPage formPage = new FormPage(driver);
+
 		formPage.setNameField("Sakshi Aggarwal");
 		formPage.setGender("female");
 		formPage.setCountrySelection("Aruba");
-		formPage.submitForm();
+		ProductCatalogue productCatalogue = formPage.submitForm();
 		Thread.sleep(3000);
-		ProductCatalogue productCatalogue = new ProductCatalogue(driver);
 		productCatalogue.addItemToCartByIndex(0);
 		productCatalogue.addItemToCartByIndex(0);
-		productCatalogue.goToCart();
+		CartPage cartPage = productCatalogue.goToCart();
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 //		wait.until(ExpectedConditions.attributeContains(

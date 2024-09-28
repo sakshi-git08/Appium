@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 
 import com.google.common.collect.ImmutableMap;
 
+import framework.pageObjects.android.FormPage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
@@ -22,6 +23,7 @@ public class TestBase {
 
 	public AndroidDriver driver;
 	public AppiumDriverLocalService service;
+	public FormPage formPage;
 
 	@BeforeClass
 	public void configureAppium() throws MalformedURLException {
@@ -54,6 +56,7 @@ public class TestBase {
 		if (driver == null) {
 			throw new RuntimeException("Failed to initialize the Appium driver");
 		}
+		formPage = new FormPage(driver);
 	}
 
 	public void longPressAction(WebElement ele) {
