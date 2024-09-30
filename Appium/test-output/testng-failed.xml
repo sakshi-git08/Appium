@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MobileTesting.Appium.ECommerce_TC_4">
+      <class name="framework.EndToEndGeneralStoreTest">
         <methods>
-          <include name="hybridAppTest"/>
           <include name="tearDown"/>
+          <include name="preSetUp"/>
           <include name="configureAppium"/>
+          <include name="hybridAppTest"/>
         </methods>
-      </class> <!-- MobileTesting.Appium.ECommerce_TC_4 -->
+      </class> <!-- framework.EndToEndGeneralStoreTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
