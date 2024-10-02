@@ -6,9 +6,8 @@
       <class name="framework.EndToEndGeneralStoreTest">
         <methods>
           <include name="tearDown"/>
-          <include name="preSetUp"/>
           <include name="configureAppium"/>
-          <include name="hybridAppTest"/>
+          <include name="hybridAppTest" invocation-numbers="1"/>
         </methods>
       </class> <!-- framework.EndToEndGeneralStoreTest -->
     </classes>

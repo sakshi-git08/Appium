@@ -16,8 +16,21 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 
 public abstract class AppiumUtils {
+
+	public AppiumDriverLocalService service;
+
+	public AppiumDriverLocalService startAppiumServer(String ipAddress, int port) {
+		service = new AppiumServiceBuilder()
+				.withAppiumJS(
+						new File("C:\\Users\\DELL\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+				.withIPAddress(ipAddress).usingPort(port).build();
+		service.start();
+		return service;
+	}
 
 	public Double getFormattedString(String amount) {
 		Double price = Double.parseDouble(amount.substring(1));
@@ -29,10 +42,10 @@ public abstract class AppiumUtils {
 		wait.until(ExpectedConditions.attributeContains((ele), "text", "Cart"));
 	}
 
-	public List<HashMap<String, String>> getJsonFData(String jsonFilePath) throws IOException {
-		String jsonContent = FileUtils.readFileToString(
-				new File(System.getProperty("user.dir") + "\\src\\test\\java\\testData\\eCommerce.json"),
-				StandardCharsets.UTF_8);
+	public List<HashMap<String, String>> getJsonData(String jsonFilePath) throws IOException {
+		// System.getProperty("user.dir") +
+		// "\\src\\test\\java\\testData\\eCommerce.json"
+		String jsonContent = FileUtils.readFileToString(new File(jsonFilePath), StandardCharsets.UTF_8);
 		ObjectMapper om = new ObjectMapper();
 		List<HashMap<String, String>> data = om.readValue(jsonContent,
 				new TypeReference<List<HashMap<String, String>>>() {

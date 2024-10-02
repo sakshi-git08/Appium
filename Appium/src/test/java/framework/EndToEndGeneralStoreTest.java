@@ -1,6 +1,8 @@
 package framework;
 
+import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
@@ -18,6 +20,7 @@ import org.testng.annotations.Test;
 
 import com.google.common.collect.ImmutableMap;
 
+import framework.TestUtils.TestBase;
 import framework.pageObjects.android.CartPage;
 import framework.pageObjects.android.FormPage;
 import framework.pageObjects.android.ProductCatalogue;
@@ -27,11 +30,11 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class EndToEndGeneralStoreTest extends TestBase {
 	@Test(dataProvider = "getData")
-	public void hybridAppTest(String name, String gender, String country) throws InterruptedException {
+	public void hybridAppTest(HashMap<String, String> input) throws InterruptedException {
 
-		formPage.setNameField(name);
-		formPage.setGender(gender);
-		formPage.setCountrySelection(country);
+		formPage.setNameField(input.get("name"));
+		formPage.setGender(input.get("gender"));
+		formPage.setCountrySelection(input.get("country"));
 		ProductCatalogue productCatalogue = formPage.submitForm();
 		Thread.sleep(3000);
 		productCatalogue.addItemToCartByIndex(0);
@@ -59,8 +62,12 @@ public class EndToEndGeneralStoreTest extends TestBase {
 //	}
 
 	@DataProvider
-	public Object[][] getData() {
-		return new Object[][] { { "Sakshi Aggarwal", "female", "Aruba" }, { "Anju Lakshman", "female", "Argentina" } };
+	public Object[][] getData() throws IOException {
+		List<HashMap<String, String>> data = getJsonData(
+				System.getProperty("user.dir") + "\\src\\test\\java\\testData\\eCommerce.json");
+//		return new Object[][] { { "Sakshi Aggarwal", "female", "Aruba" }, { "Anju Lakshman", "female", "Argentina" } };
+		return new Object[][] { { data.get(0) }, { data.get(1) } };
 	}
 
+	// { {hashmap1}, {hashmap2} } -> data
 }

@@ -1,193 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-30T00:45:02Z" name="Default suite" finished-at="2024-09-30T00:45:27Z" duration-ms="25030">
+  <suite started-at="2024-10-02T06:02:12Z" name="Default suite" finished-at="2024-10-02T06:03:32Z" duration-ms="79692">
     <groups>
     </groups>
-    <test started-at="2024-09-30T00:45:02Z" name="Default test" finished-at="2024-09-30T00:45:27Z" duration-ms="25030">
+    <test started-at="2024-10-02T06:02:12Z" name="Default test" finished-at="2024-10-02T06:03:32Z" duration-ms="79692">
       <class name="framework.EndToEndGeneralStoreTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:02Z" name="configureAppium" finished-at="2024-09-30T00:45:27Z" duration-ms="24926" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:framework.EndToEndGeneralStoreTest@1fc32e4f]" started-at="2024-10-02T06:02:12Z" name="configureAppium" finished-at="2024-10-02T06:02:49Z" duration-ms="36551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method is-config="true" signature="preSetUp()[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:27Z" name="preSetUp" finished-at="2024-09-30T00:45:27Z" duration-ms="62" status="FAIL">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-at framework.EndToEndGeneralStoreTest.preSetUp(EndToEndGeneralStoreTest.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preSetUp -->
-        <test-method signature="hybridAppTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:27Z" name="hybridAppTest" data-provider="getData" finished-at="2024-09-30T00:45:27Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-at framework.EndToEndGeneralStoreTest.preSetUp(EndToEndGeneralStoreTest.java:57)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+        <test-method signature="hybridAppTest(java.util.HashMap)[pri:0, instance:framework.EndToEndGeneralStoreTest@1fc32e4f]" started-at="2024-10-02T06:02:49Z" name="hybridAppTest" data-provider="getData" finished-at="2024-10-02T06:03:19Z" duration-ms="29951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Sakshi Aggarwal, country=Aruba, gender=female}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hybridAppTest -->
-        <test-method is-config="true" signature="preSetUp()[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:27Z" name="preSetUp" finished-at="2024-09-30T00:45:27Z" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preSetUp -->
-        <test-method signature="hybridAppTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:27Z" name="hybridAppTest" data-provider="getData" finished-at="2024-09-30T00:45:27Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
+        <test-method signature="hybridAppTest(java.util.HashMap)[pri:0, instance:framework.EndToEndGeneralStoreTest@1fc32e4f]" started-at="2024-10-02T06:03:19Z" name="hybridAppTest" data-provider="getData" finished-at="2024-10-02T06:03:30Z" duration-ms="10357" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Anju Lakshman, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.androidsample.generalstore:id/nameField})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: Unknown mobile command "intent". Only shell,execEmuConsoleCommand,startLogsBroadcast,stopLogsBroadcast,changePermissions,getPermissions,performEditorAction,getDeviceTime,startScreenStreaming,stopScreenStreaming,getNotifications,listSms,pushFile,pullFile,pullFolder,deleteFile,isAppInstalled,queryAppState,activateApp,removeApp,terminateApp,installApp,clearApp,startService,stopService,startActivity,broadcast,getContexts,lock,unlock,isLocked,refreshGpsCache,startMediaProjectionRecording,isMediaProjectionRecordingRunning,stopMediaProjectionRecording,getConnectivity,setConnectivity,hideKeyboard,isKeyboardShown,deviceidle,bluetooth,nfc,setUiMode,getUiMode,injectEmulatorCameraImage,sendTrimMemory,getPerformanceData,getPerformanceDataTypes,toggleGps,isGpsEnabled,getDisplayDensity,getSystemBars,statusBar,fingerprint,sendSms,gsmCall,gsmSignal,gsmVoice,powerAc,powerCapacity,networkSpeed,sensorSet,getCurrentActivity,getCurrentPackage,dragGesture,flingGesture,doubleClickGesture,clickGesture,longClickGesture,pinchCloseGesture,pinchOpenGesture,swipeGesture,scrollGesture,scrollBackTo,scroll,viewportScreenshot,viewportRect,deepLink,acceptAlert,dismissAlert,batteryInfo,deviceInfo,openNotifications,type,replaceElementValue,getAppStrings,installMultipleApks,backgroundApp,pressKey,screenshots,scheduleAction,getActionHistory,unscheduleAction,setClipboard,getClipboard commands are supported.
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [cedea6a3-5dec-437a-89ec-9c967611411c, executeScript {args=[{com.androidsample.generalstore=com.androidsample.generalstore.MainActivity}], script=mobile: intent}]
-Capabilities {appium:app: D:\Sakshi\MobileTestingApks..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\DELL\Downloads\chr..., appium:databaseEnabled: false, appium:desired: {app: D:\Sakshi\MobileTestingApks..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\DELL\Downloads\chr..., deviceName: Sakshiemulator, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 15, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: cedea6a3-5dec-437a-89ec-9c967611411c
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-at framework.EndToEndGeneralStoreTest.preSetUp(EndToEndGeneralStoreTest.java:57)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.androidsample.generalstore:id/nameField})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$2FZFzBzR.sendKeys(Unknown Source)
+at framework.pageObjects.android.FormPage.setNameField(FormPage.java:47)
+at framework.EndToEndGeneralStoreTest.hybridAppTest(EndToEndGeneralStoreTest.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -207,13 +67,39 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3bc4ef12 (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+... 30 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.androidsample.generalstore:id/nameField})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: driver.version: RemoteWebDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 32 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hybridAppTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.EndToEndGeneralStoreTest@5be46f9d]" started-at="2024-09-30T00:45:27Z" name="tearDown" finished-at="2024-09-30T00:45:27Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:framework.EndToEndGeneralStoreTest@1fc32e4f]" started-at="2024-10-02T06:03:30Z" name="tearDown" finished-at="2024-10-02T06:03:32Z" duration-ms="1924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
